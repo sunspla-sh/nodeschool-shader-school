@@ -1,8 +1,11 @@
 bool inBox(highp vec2 lo, highp vec2 hi, highp vec2 p) {
 
-  //Test if the point p is inside the box bounded by [lo, hi]
-
+  if(p.x < hi.x && p.x > lo.x && p.y < hi.y && p.y > lo.y) {
+    return true;
+  }
+  
   return false;
+  
 }
 
 
